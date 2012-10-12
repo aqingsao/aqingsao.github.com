@@ -5,8 +5,4 @@ description: "To reduce server side burden and get a better performance, templat
 category: WEB
 tags: [HTML, client templating, JSON, web，客户端模板]
 ---
-{% include JB/setup %}
-
-<h2> {{page.title}}</h2>
-<p> My first article</p>
-<p>{{page.date | date_to_string}}</p>
+TBD.
