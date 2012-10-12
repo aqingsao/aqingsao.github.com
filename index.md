@@ -4,7 +4,7 @@ title: aqingsao的博客
 ---
 
 <div id="posts">
-  {% for post in site.posts limit: 3 %}
+  {% for post in site.posts limit: 10 %}
     <div class="post">
       <div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
       <div class="content">{{ post.content }}</div>
