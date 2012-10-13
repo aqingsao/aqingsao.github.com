@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
@@ -16,7 +16,7 @@ author :
   email : vinci.zhang@gmail.com
   github : aqingsao
   twitter : aqingsao
-  # feedburner : feedname
+  feedburner : aqingsao
   weibo : aqingsao
 
 # The production_url is only used when full-domain names are needed
@@ -27,7 +27,7 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.com
+production_url : http://aqingsao.github.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -125,3 +125,9 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+years :
+  - "2008"
+  - "2009"
+  - "2010"
+  - "2011"
+  - "2012"

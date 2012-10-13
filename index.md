@@ -16,7 +16,7 @@ title: aqingsao的博客
         </div>
         <span class="date">{{ post.date | date_to_string }}</span><span class="author"> posted by {{ site.author.name }} in</span>
         <span><a class="category" href="/categories.html#{{ post.category }}">{{ post.category }}</a></span>
-        <span><a class="comments" href="{{ post.url }}#disqus_thread"></a></span>
+        <!-- <span><a class="comments" href="{{ post.url }}#disqus_thread"></a></span> -->
       </div>
     </div>
   {% endfor %}
