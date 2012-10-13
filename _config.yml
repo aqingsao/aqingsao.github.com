@@ -18,7 +18,9 @@ author :
   twitter : aqingsao
   feedburner : aqingsao
   weibo : aqingsao
-
+seo :
+  keywords: Java, J2EE, Spring, Hibernate, Ruby, Rails, JavaScript, NodeJS, html5, 自动化测试,thoughtworks, 张晓庆
+  description: Blog for 张晓庆(aqingsao), mainly on enterprise/distributed/web app development in Java/Ruby/NodeJS and agile practice.
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
