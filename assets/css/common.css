@@ -65,3 +65,6 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .sublist h2{font-style: bold; font-size: 25px; margin: 15px 0; }
 .sublist ul{margin-left: 40px;}
 .sublist ul li{list-style: disc; margin-bottom: 5px;}
+
+.highlight{margin-top: 15px; margin-bottom: 10px; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC;background-color: #F0F0F0}
+.highlight pre{background-color: transparent; margin: 0; padding: 10px; border: none; overflow: auto;}
