@@ -20,7 +20,7 @@ image1:
 
 {% highlight yaml %}
 china:  
-  name:china  
+  name: china  
 {% endhighlight %}
 
 如果db:fixtures:load先加载category文件，然后加载images文件，肯定没问题。不幸的是，我们使用时出现了这样的错误：
