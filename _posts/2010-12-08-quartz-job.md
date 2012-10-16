@@ -25,4 +25,4 @@ tags: [Java, Quartz]
 针对这种情况，因为同时执行会有状态不一致的问题，所以之需要保证Job不同时执行就好了。所以可以在上一个Job结束后再立即执行新Job。
 
 
-解决方法就是让你的Job实现StatefulJob。因为是有状态的，Quartz会在标记该Job状态为“blocked”，直到Job结束，彩会改成“Awaiting”。所以只有上一个Job结束后才会执行下一个。
+解决方法就是让你的Job实现StatefulJob。因为是有状态的，Quartz会在标记该Job状态为“blocked”，直到Job结束，才会改成“Awaiting”。所以只有上一个Job结束后才会执行下一个。
