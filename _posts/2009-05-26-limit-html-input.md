@@ -2,8 +2,8 @@
 layout: post
 title: "HTML输入框中限制只输入金额（非负小数）"
 description: "本文使用一个简单的方法限制HTML输入框只能输入金额"
-category: HTML
-tags: [HTML]
+category: Html
+tags: [Html]
 ---
 目前实现了：
 1. 只能输入1个小数点

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0042)http://xiaoqing.me/html5/NumericInput.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title></title>
+    <style type="text/css">
+        body {
+            max-width: 998px;
+        }
+
+        span.error {
+            font-style: italic;
+            font-weight: bold;
+            color: red;
+        }
+
+        div.validationCase {
+            padding: 20px 15px 0;
+            border: 1px solid;
+            background: none repeat scroll 0 0 #EEEEEE;
+            margin-bottom:15px;
+        }
+        div.validationCase p{
+            font-style:italic;
+        }
+
+    </style>
+    <script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.alphanumeric.js"></script>
+    <script type="text/javascript">
+
+        var illegalCharsReg = /[^0-9a-zA-Z]/g;
+        function replaceIllegalChars(inputBox) {
+            inputBox.val(inputBox.val().replace(illegalCharsReg, ''));
+        }
+        function isNumberOrLetter(key) {
+            return (key >= 48 && key <= 57) || (key >= 65 && key <= 90) || (key >= 97 && key <= 122);
+        }
+
+        function isSpecialKey(key) {
+            return key == 0 || key == 8 || key == 13 || key == 9;
+        }
+
+        $(document).ready(function() {
+            var legalCharReg = /^[0-9a-zA-Z]*$/;
+            $("#validateAfterAll input[type='submit']").bind("click", function() {
+                var valid = legalCharReg.test($("#validateAfterAll input[name='name']").val());
+                if (!valid) {
+                    $("#validateAfterAll input[name='name']").css("border", "2px solid red");
+                }
+                return valid;
+            });
+
+            $("#validateAfterSingle input[name='name']").bind("keyup", function() {
+                replaceIllegalChars($(this));
+            });
+            $("#validateAfterSingleImprovement input[name='name']").bind("keyup", function() {
+                replaceIllegalChars($(this));
+            });
+            $("#validateAfterSingleImprovement input[type='submit']").bind("click", function() {
+                replaceIllegalChars($("#validateAfterSingleImprovement input[name='name']"));
+            });
+
+            $("#validateOnSingle input[name='name']").alphanumeric({nchars:"_"});
+
+            $("#validateOnSingleImprovement input[name='name']").css('ime-mode', 'disabled');
+            $("#validateOnSingleImprovement input[name='name']").bind('keypress', function(event) {
+                if (!isSpecialKey(event.which) && !isNumberOrLetter(event.which)) {
+                    event.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <h1>A list of html input boxes to limit user input</h1>
+
+    <div style="color:#a52a2a;"><strong>Note: Only numbers(0-9) and letters(a-z, A-Z) are allowed.</strong></div>
+    <div class="validationCases">
+        <h2>
+            Case 1: Validate after inputting all characters
+        </h2>
+
+        <div class="validationCase">
+            <form action="/assets/html/NumericInput.html" id="validateAfterAll">
+                <label>Name:</label>
+                <input type="text" name="name" maxlength="20" value="This is invalid text">
+                <input type="submit" value="Submit">
+            </form>
+            <p style="font-style:italic;">
+                Try to input invalid values and click submit button.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="validationCases">
+        <h2>
+            Case 2: Validate after inputting single character
+        </h2>
+
+        <div class="validationCase">
+            <form action="/assets/html/NumericInput.html" id="validateAfterSingle">
+                <label>Name:</label>
+                <input name="name" type="text" maxlength="20">
+                <input type="submit" value="Submit">
+            </form>
+            <p>
+                Try to input invalid character and quickly click submit button.
+            </p>
+        </div>
+        <div class="validationCase">
+            <form action="/assets/html/NumericInput.html" id="validateAfterSingleImprovement">
+                <label>Name:</label>
+                <input name="name" type="text" maxlength="20">
+                <input type="submit" value="Submit">
+            </form>
+            <p>
+                Some Improvement: Will double check before submitting, try to input invalid character and quickly submit button again.
+            </p>
+        </div>
+    </div>
+    <div class="validationCases">
+        <h2>
+            Case 3: Validate when inputting single character--Based on JQuery plugin
+        </h2>
+
+        <div class="validationCase">
+            <form action="/assets/html/NumericInput.html" id="validateOnSingle">
+                <label>Name:</label>
+                <input name="name" type="text" maxlength="20">
+                <input type="submit" value="Submit">
+            </form>
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="validationCases">
+        <h2>
+            Case 4: Validate when inputting single character--Based on Javascript(JQuery)
+        </h2>
+
+        <div class="validationCase">
+            <form action="/assets/html/NumericInput.html" id="validateOnSingleImprovement">
+                <label>Name:</label>
+                <input name="name" type="text" maxlength="20">
+                <input type="submit" value="Submit">
+            </form>
+            <p>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body></html>
