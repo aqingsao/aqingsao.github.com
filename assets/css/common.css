@@ -71,3 +71,4 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .l-Scalar-Plain{color: white}
 .p-Indicator{color: #0086D2}
 .post a.centralBlock{dislay: block; text-align: center}
+a img{max-width: 100%}
