@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 领域对象建模：保持数据的完整性
-tags:
-  - domain-model-%e9%a2%86%e5%9f%9f%e5%af%b9%e8%b1%a1-%e5%bb%ba%e6%a8%a1
+category: Domain Model
+tags: [Domain Model]
 
 ---
 
@@ -17,14 +17,19 @@ tags:
 这种情况我们叫做丢失了数据的完整性。
 
 此时，我们在建模时，可以给关键领域对象设置关联的历史纪录（或者事件），比如PromotionItemHistory（当然也可以是PromotionItemEvent，一样的思路），把促销商品的每一个状态变化记录下来：
-<img src="http://xiaoqing.me/wp-content/uploads/2012/01/blog_1.png"/>
+
+![promotion item history model](/assets/images/promotionItemHistory.png "")
 
 有了历史记录，就可以真正做到“手中有粮，心里不慌”了。这与徐昊在InfoQ上的文章《》其实是类似的思路：通过时标查找重要的领域对象，每个时标都会带来领域对象的变化，而且很多时候是状态的变化，并且把状态变化捕捉下来，以达到数据的完整性。
 
 通过记录状态的变化，可以很容易和基于事件的，或者事件驱动的架构结合起来。比如，业务又来新需求了：每当有产品卖出的时候，业务的头想立刻收到邮件...
 
 这个功能本身不难实现，但考虑到发送邮件不是业务的核心功能，而只是业务支撑，或者业务的增强，我们可以把发送邮件的代码与业务的核心代码分开。怎么分呢，发送邮件的Service可以监听商品的状态发生变化，并适时实现自己的功能，从时序图来说，就是从原来的：
-<img src="http://xiaoqing.me/wp-content/uploads/2012/01/Blog_2.png"/>
+
+![promotion service sequence](/assets/images/promotionServiceSequence.png "")
+
 替换为下面的实现：
-<img src="http://xiaoqing.me/wp-content/uploads/2012/01/Blog_3.png"/>
+
+![promotion service sequence with listener](/assets/images/promotionServiceListener.png "")
+
 通过修改，把短信和商品的紧耦合编程了松耦合。而且，随着业务量的增大，如果这里出现了性能瓶颈，可以考虑把同步的通知改成异步，甚至可以考虑引入消息中间件——当然，这取决于系统的规模和业务量。

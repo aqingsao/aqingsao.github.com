@@ -66,7 +66,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .sublist ul{margin-left: 40px;}
 .sublist ul li{list-style: disc; margin-bottom: 5px;}
 
-.highlight{margin-top: 15px; margin-bottom: 10px; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC;background-color: black;}
+.highlight{margin-top: 15px; margin-bottom: 10px; border-top: 1px solid #CCC; border-bottom: 1px solid #CCC;background-color: black;color: white}
 .highlight pre{background-color: transparent; margin: 0; padding: 10px; border: none; overflow: auto;}
 .l-Scalar-Plain{color: white}
 .p-Indicator{color: #0086D2}

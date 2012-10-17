@@ -6,7 +6,7 @@ tags: [Agile, ThoughtWorks, Automation]
 
 ---
 
-在胡凯近期组织的新任PM/TL经验交流会上，提到了什么是合适的leverage模型：<a href="http://www.iamhukai.com/?p=423">给一年级PM/TL的信 － 交付与团队成长</a>。碰巧Mike Gualtieri最近<a href="http://blogs.forrester.com/mike_gualtieri/11-02-17-want_better_quality_fire_your_qa_team">一篇文章</a>中提到了没有QA的团队，让我觉得，没有QA的团队，不但靠谱，而且没准会有奇效。
+在胡凯近期组织的新任PM/TL经验交流会上，提到了什么是合适的leverage模型：[给一年级PM/TL的信 － 交付与团队成长](http://www.iamhukai.com/?p=423)。联系到Mike Gualtieri最近一篇文章中提到了[没有QA的团队](http://blogs.forrester.com/mike_gualtieri/11-02-17-want_better_quality_fire_your_qa_team)，让我思考，团队中真的必须有QA吗？
 
 没有QA，缺少了最后的保障，软件质量是否会一降千里？不会的。没有单独的QA，并不意味着没有人去做测试和质量保证，而是让每一名dev承担测试的责任。很多人的经验表明，开发过程很常见的一个问题是，Dev匆匆忙忙做完story，就认为任务已经完成，剩下都是QA的事情，即使出了问题，也是QA测试不周。在心理学上，这是一种典型的心理依赖。由于认为自己只承担开发责任，Dev会用很大的精力追求开发速度，这是导致缺陷过多、质量下降的主要原因。在没有QA的团队，Dev要１００%对质量负责，这种责任的转移，让Dev去掉了侥幸心理，从而会重视每一个Story的质量。
 

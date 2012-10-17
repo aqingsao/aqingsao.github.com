@@ -1,6 +1,6 @@
 ---
 layout: default
-title: aqingsao的博客
+title: My Thought, My Works
 ---
 
 <div id="posts">
