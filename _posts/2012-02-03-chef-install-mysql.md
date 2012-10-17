@@ -13,7 +13,7 @@ tags: [Chef, Tools, MySQL]
 然后怀疑数据库的连接地址，Web应用程序中的配置：localhost:3306。通过netstat -atn查看一下：看到这样一条：
 
 {%highlight console%}
-tcp   0   0 <strong>10.29.1.25</strong>:3306    0.0.0.0:*   LISTEN 
+tcp     0     0   10.29.1.25:3306      0.0.0.0:*     LISTEN 
 {%endhighlight%}
 
 问题就出在这里，10.29.1.25意味着只监听远程网络的端口调用，而不会监听本地端口。最简单的方法是把应用程序中的localhost:3306改成10.29.1.25:3306。
