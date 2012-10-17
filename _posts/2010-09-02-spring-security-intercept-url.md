@@ -2,7 +2,7 @@
 layout: post
 title: "Spring Security intercept url"
 description: ""
-category: Spring
+category: Java
 tags: [Java, Spring]
 ---
 客户遗留系统的权限部分使用了Spring security中的FilterSecurityInterceptor，可以通过设置intercept-url及对应的权限进行验证。

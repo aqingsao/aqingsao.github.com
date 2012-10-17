@@ -2,8 +2,8 @@
 layout: post
 title: "Web自动化测试之WebDriver"
 description: ""
-category: Functional Test
-tags: [WebDriver, Functional Test]
+category: Automation
+tags: [WebDriver, Automation, Functional Test]
 ---
 
 对Web进行自动化测试，我们首先想象一个简单的场景，来看看需要测试哪些东西：

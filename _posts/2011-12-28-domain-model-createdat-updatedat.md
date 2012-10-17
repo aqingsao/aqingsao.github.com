@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 领域对象建模：正确使用createdAt和updatedAt
-category: Domain Model
-tags: [Domain Model]
+category: OO
+tags: [OO, Domain Model]
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'magic cube on html5'
-category: Html5
-tags: [Html5, Canvas, JavaScript, ThoughtWorks]
+category: Html
+tags: [Html, Html5, Canvas, JavaScript, ThoughtWorks]
 
 ---
 

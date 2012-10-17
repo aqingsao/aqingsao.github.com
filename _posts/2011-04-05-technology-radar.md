@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'ThoghtWorks technology radar'
-category: Html5
-tags: [Html5, Canvas, JavaScript, RGraph, ThoughtWorks, Technology Radar]
+category: Html
+tags: [Html, Html5, Canvas, JavaScript, RGraph, ThoughtWorks, Technology Radar]
 
 ---
 

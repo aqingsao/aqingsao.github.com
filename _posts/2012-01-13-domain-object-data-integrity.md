@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 领域对象建模：保持数据的完整性
-category: Domain Model
-tags: [Domain Model]
+category: OO
+tags: [OO, Domain Model]
 
 ---
 
