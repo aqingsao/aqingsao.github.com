@@ -1,8 +1,8 @@
 ---
 layout: post
 title: '通过JavaScript Template简化前端JavaScript开发'
-category: JavaScript
-tags: [JavaScript, Client Templating, trimpath]
+category: Web
+tags: [Web, Html, JavaScript, Client Templating, trimpath]
 
 ---
 
