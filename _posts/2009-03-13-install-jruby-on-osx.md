@@ -39,28 +39,40 @@ tags: [OSX, Rails, Sqlite3]
 >jgem install activerecord-jdbcmysql-adapter –-no-rdoc –-no-ri
  
 注：上面的安装方式比较简单。如果分别安装activerecord-jdbc-adapter 和sqlite3-ruby ，会有以下错误：
->Building native extensions.  This could take a while...
->/usr/lib/jruby-1.1.6/lib/ruby/1.8/mkmf.rb:7: JRuby does not support native extensions. Check wiki.jruby.org for alternatives. (NotImplementedError)
->    from /usr/lib/jruby-1.1.6/lib/ruby/1.8/mkmf.rb:1:in `require'
->    from extconf.rb:1
->ERROR:  Error installing sqlite3-ruby:
->    ERROR: Failed to build gem native extension.
+
+{%highlight console %}
+Building native extensions.  This could take a while...
+/usr/lib/jruby-1.1.6/lib/ruby/1.8/mkmf.rb:7: JRuby does not support native extensions. Check wiki.jruby.org for alternatives. (NotImplementedError)
+    from /usr/lib/jruby-1.1.6/lib/ruby/1.8/mkmf.rb:1:in `require'
+    from extconf.rb:1
+ERROR:  Error installing sqlite3-ruby:
+    ERROR: Failed to build gem native extension.
+{%endhighlight%}
  
 #####2.3 安装openssl
 上面安装时一直有错误提示：
->JRuby limited openssl loaded. gem install jruby-openssl for full support.
->http://wiki.jruby.org/wiki/JRuby_Builtin_OpenSSL
+
+{%highlight console%}
+JRuby limited openssl loaded. gem install jruby-openssl for full support.
+http://wiki.jruby.org/wiki/JRuby_Builtin_OpenSSL
+{%endhighlight%}
+
 这样安装一下openssl就可以了：
->jruby -S gem install jruby-openssl
+
+{%highlight console%}
+jruby -S gem install jruby-openssl
+{%endhighlight%}
  
 使用时注意修改database.yml中的adapter：
  
->development:
->  adapter: jdbcsqlite3 
->  database: db/development.sqlite3
->  timeout: 5000
+{%highlight console%}
+development:
+  adapter: jdbcsqlite3 
+  database: db/development.sqlite3
+  timeout: 5000
+{%endhighlight%}
 
 下面你就可以开始使用JRuby on Rails了。
 参考文章：
-*Get JRuby onto the Rails on Mac OS X (注：此文有一些错误，后面的评论给了纠正)
-*TOTD #37: SQLite3 with Ruby-on-Rails on GlassFish Gem
+* Get JRuby onto the Rails on Mac OS X (注：此文有一些错误，后面的评论给了纠正)
+* TOTD #37: SQLite3 with Ruby-on-Rails on GlassFish Gem
