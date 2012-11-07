@@ -83,5 +83,25 @@ p.image-container{
 	width: 66%;
 }
 .image-container.big{
-	width: 33%;
-}	
+	width: 100%;
+}
+table.large{
+	width: 100%;
+	border: 1px solid;
+}
+table.large td.header{
+	width: 10%;
+	font-weight: bold;
+}
+table.large td{
+	width: 5%;
+	border: 1px solid;
+}
+
+ol li{
+	list-style: decimal;
+}
+@media print{
+	div#sidebar{display: none};
+	div#content{width: 960px};
+}
