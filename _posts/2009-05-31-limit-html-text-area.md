@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "HTML textarea输入框限制长度"
+keywords: Web, HTML, textarea, limit length
 description: "解决了在HTML中如何限制Text Area输入指定长度的问题"
 category: Html
 tags: [Html]

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "提供用户名和密码的SSH自动登录脚本"
-description: ""
+keywords: Automation, SSH, Expect
+description: "automation scripts to login with SSH"
 category: Script
 tags: [Script, Expect]
 ---

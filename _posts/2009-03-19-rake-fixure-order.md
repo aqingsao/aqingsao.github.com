@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "解决Rails rake fixtures加载的顺序问题"
+keywords: Rails, rake, fixtures
 description: "解决Rails rake fixture的加载顺序问题"
 category: Rails
 tags: [Rails]

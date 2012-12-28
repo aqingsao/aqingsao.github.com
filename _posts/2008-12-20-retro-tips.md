@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "[翻译]给敏捷回顾主持人的5个小贴士 "
-description: ""
+keywords: Agile, Retrospective
+description: "Some tips to moderate a retrospective meeting"
 category: Agile 
 tags: [Agile, 回顾会议]
 ---

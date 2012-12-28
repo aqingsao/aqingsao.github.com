@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "通过坏味道提高敏捷实践在项目中的适用性"
+keywords: Agile
 description: "本文介绍了常见的敏捷坏味道，以及如何提到"
 category: Agile
 tags: [Agile, Bad Smell]

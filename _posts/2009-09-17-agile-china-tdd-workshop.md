@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "敏捷中国2009大会TDD workshop随笔"
-description: ""
+keywords: TDD workshop
+description: "TDD workshop"
 category: Agile
 tags: [Agile, TDD]
 ---

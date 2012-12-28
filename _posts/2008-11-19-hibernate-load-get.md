@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hibernate中get()与load()方法的区别"
+keywords: Java, Hibernate
 description: "Hibernate中get()方法与load()方法的区别"
 category: Java
 tags: [Java, Hibernate]

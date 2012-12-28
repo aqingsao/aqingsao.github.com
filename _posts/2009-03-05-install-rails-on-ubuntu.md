@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "在Ubuntu 8.10上安装Rails "
+keywords: Ubuntu 8.10, Rails
 description: "介绍了在Ubuntu 8.10上安装Rails的步骤"
 category: Rails
 tags: [Ubuntu, Rails]

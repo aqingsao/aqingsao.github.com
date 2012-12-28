@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mac OS X上安装JRuby on Rails和sqlite3"
+keywords: Mac OS X, JRuby on Rails, sqlite3
 description: "本文介绍了如何在Mac OSX 10.5上安装Jruby on Rails和Sqlite3"
 category: Rails
 tags: [OSX, Rails, Sqlite3]

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "浅谈即时验收在敏捷开发中的应用"
-description: ""
+keywords: Agile, signoff
+description: "BA signoff in agile projects"
 category: Agile 
 tags: [Agile, BA Signoff]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "HTML输入框中限制只输入金额（非负小数）"
+keywords: Web, HTML, limit input, money
 description: "本文使用一个简单的方法限制HTML输入框只能输入金额"
 category: Html
 tags: [Html]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "读Dreyfus知识获取模型有感"
+keywords: Dreyfus
 description: "Dreyful知识获取模型读后感"
 category: Agile
 tags: [Agile, Capability]

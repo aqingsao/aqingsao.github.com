@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-RMI"
-description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS"
+description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS, CORBA"
 category: Java
-tags: [Java, 分布式协议, RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS]
+tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, JBoss Remoting, HttpInvoker, Hessian, Burlap]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * RMI: 含JBoss-Remoting，Spring Remoting
 > * [RPC]("/"): 含XML-RPC, Binary-RPC
-> * [Spring Remoting]("/"): (HttpInvoker)
+> * [CORBA]("/"): 
 > * [SOAP]("/"): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
 
