@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 使用Expect创建VPN自动登陆脚本
+keywords: Expect, VPN, Automation, Scripts
+description: Write automation scripts with expect
 category: Tools
 tags: [Tools, Automation, Expect, Script]
 ---

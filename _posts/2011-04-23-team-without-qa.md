@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 没有QA的团队
+keywords: agile, team, QA
+description: agile team with no QA roles.
 category: Agile
 tags: [Agile, ThoughtWorks, Automation]
 

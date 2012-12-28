@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-RMI"
+keywords: Java, J2EE, RMI, 分布式协议, 协议, 通信协议, JBoss Remoting, Spring Remoting, HttpInvoker
+description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RMI。其他还有XML-RPC, Binary-RPC, Hessian, Burlap, Deiban, SOAP, JMS, CORBA"
+
 description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS, CORBA"
 category: Java
 tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, JBoss Remoting, HttpInvoker, Hessian, Burlap]
@@ -8,9 +11,9 @@ tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, 
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * RMI: 含JBoss-Remoting，Spring Remoting
-> * [RPC]("/"): 含XML-RPC, Binary-RPC
-> * [CORBA]("/"): 
-> * [SOAP]("/"): (Web Service)
+> * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
+> * [CORBA](): 
+> * [SOAP](): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
 
 Java中很容易调用一个实例的方法，但是想调用其他虚拟机上的实例怎么办？RMI技术应运而生，可以让Java程序调用远程虚拟机上的对象。

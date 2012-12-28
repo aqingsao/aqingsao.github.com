@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-RPC"
-description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS, CORBA"
+keywords: Java, J2EE, RMI, 分布式协议, 协议, 通信协议, RPC, XML-RPC, Binary-RPC, Hessian, Burlap
+description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RPC, Binary-RPC, XML-RPC。其他还有EJB, RMI, SOAP, JMS, CORBA"
 category: Java
 tags: [Java, 分布式协议, 协议，通讯协议, RPC, XML-RPC, Binary-RPC, Hessian, Burlap]
 ---
@@ -9,8 +10,8 @@ tags: [Java, 分布式协议, 协议，通讯协议, RPC, XML-RPC, Binary-RPC, H
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * [RMI](http://xiaoqing.me/2012/12/21/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * RPC: 含XML-RPC, Binary-RPC
-> * [CORBA]("/"): 
-> * [SOAP]("/"): (Web Service)
+> * [CORBA](): 
+> * [SOAP](): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
 
 RPC, 远程过程调用， 也叫远程函数调用, 最早出现在Sun公司和HP公司的运行Unix操作系统的计算机中，用于系统间通信的一种机制. 

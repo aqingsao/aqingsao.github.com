@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 领域对象建模：保持数据的完整性
+keywords: OO, Object Oriented, Domain Model
+description: Keep integrity of data when building domain model
 category: OO
 tags: [OO, Domain Model]
 

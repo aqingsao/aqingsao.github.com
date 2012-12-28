@@ -1,16 +1,17 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-EJB"
-description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS, CORBA"
+keywords: Java, J2EE, RMI, EJB, Session Bean, Message Driven Bean, Entity Bean, EJB 3.0, 分布式协议，协议，通信协议
+description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了EJB和EJB3.0。其他还有RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, JMS, CORBA"
 category: Java
 tags: [Java, 分布式协议, 协议，通讯协议，RMI, EJB]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * [RMI](http://xiaoqing.me/2012/12/19/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
-> * [RPC]("/"): 含XML-RPC, Binary-RPC
-> * [CORBA]("/"): 
-> * [SOAP]("/"): (Web Service)
+> * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
+> * [CORBA](): 
+> * [SOAP](): (Web Service)
 > * EJB 
 
 

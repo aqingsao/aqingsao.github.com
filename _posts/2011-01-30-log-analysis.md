@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "日志分析工具的用处"
-description: ""
-category: Agile
-tags: [Agile, Test Coverage]
+title: "通过Splunk进行日志分析"
+keywords: Log analysis, tools, splunk
+description: "Log analysis with splunk"
+category: Tools
+tags: [Tools, Log Analysis, Splunk]
 ---
 系统上线好几天了，突然收到客户的紧急邮件，说是邮件发送功能有问题，预期每天发送一次，但现在每5分钟发送一次。这意味着客户会给他们的客户最快每5分钟发送一次邮件，后果很严重...  
 我的第一反应当然是怎么可能呢？  

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "通过WebDeveloper修改浏览器打印媒介的CSS"
-description: ""
+keywords: WebDeveloper, CSS, @print
+description: "Use WebDeveloper to modfiy CSS for @print"
 category: Tools
 tags: [Tools, WebDeveloper, Firebugs, CSS]
 ---

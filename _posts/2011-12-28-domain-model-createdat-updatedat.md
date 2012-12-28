@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 领域对象建模：正确使用createdAt和updatedAt
+keywords: OO, Object Oriented, Domain Model
+description: Proper use of createdAt and updatedAt to build domain model
 category: OO
 tags: [OO, Domain Model]
 

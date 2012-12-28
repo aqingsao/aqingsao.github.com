@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'jQueryNumberLettersPlugin 0.1.1 Released'
+keywords: jQuery plugin, HTML Input, limit input, number, money, email, keyPress, keyDown, 
+Description: A jQuery plugin for users to input number, email, money only
 category: Html
 tags: [Html, jQuery, jquerynumberlettersplugin]
 ---

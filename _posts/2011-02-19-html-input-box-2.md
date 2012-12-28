@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "如何做一个完美的HTML INPUT输入框（下）"
+keywords: HTML Input, limit input, number, money, email, keyPress, keyDown, 
+Description: HTML input box for number, email, money only
 category: Html
 tags: [Html, JavaScript, jQuery]
 ---

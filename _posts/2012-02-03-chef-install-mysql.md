@@ -1,6 +1,8 @@
 ---
 layout: post
 title: '通过Chef安装MySQL无法访问的问题'
+keywords: chef, MySQL, Automation
+description: Use Use to install MySQL
 category: Tools
 tags: [Chef, Tools, MySQL]
 

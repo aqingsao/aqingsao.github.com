@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "通过动态规划求绳子最大长度"
-description: "In this post, we use dynamic programming to solve a problem: Calculate the max length of a rope"
+keywords: Dynamic Programming, 动态规划, Algorithm
+description: "Use dynamic programming to solve a problem: Calculate the max length of a rope，动态规划"
 category: Algorithm
 tags: [Algorithm, 动态规划, Dynamic Programming]
 ---

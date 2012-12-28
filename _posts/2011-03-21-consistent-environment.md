@@ -1,6 +1,8 @@
 ---
 layout: post
 title: '打造一致的工作环境'
+keywords: "Agile, development environment"
+description: development environment for agile team
 category: Agile
 tags: [Agile]
 

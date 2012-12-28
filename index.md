@@ -2,7 +2,7 @@
 layout: default
 title: My Thought, My Works
 keywords: Web, Java, J2EE, Spring, Hibernate, Ruby, Rails, JavaScript, NodeJS, html5, 自动化测试, Thoughtworks, 张晓庆, aqingsao, Algorithm, Technical, 技术
-description: 张晓庆的技术博客(Technical blog for aqingsao): ThoughtWorker/Agile粉/技术控, 关注Web开发，企业级应用，J2EE，分布式开发，性能调优，Java, Ruby, NodeJS, 敏捷, Agile
+description: "张晓庆的技术博客(Technical blog for aqingsao): ThoughtWorker/Agile粉/技术控, 关注Web开发，企业级应用，J2EE，分布式开发，性能调优，Java, Ruby, NodeJS, 敏捷, Agile"
 
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'magic cube on html5'
+keywords: Magic Cube, html5, canvas
+description: a magic cube written in html5 canvas
 category: Html
 tags: [Html, Html5, Canvas, JavaScript, ThoughtWorks]
 
