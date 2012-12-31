@@ -2,9 +2,7 @@
 layout: post
 title: "Java常见分布式协议比较-RMI"
 keywords: Java, J2EE, RMI, 分布式协议, 协议, 通信协议, JBoss Remoting, Spring Remoting, HttpInvoker
-description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RMI。其他还有XML-RPC, Binary-RPC, Hessian, Burlap, SOAP, JMS, CORBA"
-
-description: "对Java中常见的分布式协议进行比较，包括RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, SOAP, EJB, JMS, CORBA"
+description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RMI, JBoss-Remoting, Spring-Remoting"
 category: Java
 tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, JBoss Remoting, HttpInvoker, Hessian, Burlap]
 ---

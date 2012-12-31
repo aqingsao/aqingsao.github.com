@@ -2,7 +2,7 @@
 layout: post
 title: "Java常见分布式协议比较-RPC"
 keywords: Java, J2EE, RMI, 分布式协议, 协议, 通信协议, RPC, XML-RPC, Binary-RPC, Hessian, Burlap
-description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RPC, Binary-RPC, XML-RPC。其他还有EJB, RMI, SOAP, JMS, CORBA"
+description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RPC, Binary-RPC, XML-RPC。"
 category: Java
 tags: [Java, 分布式协议, 协议，通讯协议, RPC, XML-RPC, Binary-RPC, Hessian, Burlap]
 ---
