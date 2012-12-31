@@ -10,7 +10,7 @@ tags: [Java, 分布式协议, 协议，通讯协议, RPC, XML-RPC, Binary-RPC, H
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * [RMI](http://xiaoqing.me/2012/12/21/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * RPC: 含XML-RPC, Binary-RPC
-> * [CORBA](): 
+> * [CORBA](http://xiaoqing.me/2012/12/28/protocols-corba/): 
 > * [SOAP](): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
 

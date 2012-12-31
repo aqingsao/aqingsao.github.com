@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-EJB"
-keywords: Java, J2EE, RMI, EJB, Session Bean, Message Driven Bean, Entity Bean, EJB 3.0, 分布式协议，协议，通信协议
+keywords: Java, J2EE, EJB, Session Bean, Message Driven Bean, Entity Bean, EJB 3.0, 分布式协议，协议，通信协议
 description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了EJB和EJB3.0。"
 category: Java
-tags: [Java, 分布式协议, 协议，通讯协议，RMI, EJB]
+tags: [Java, 分布式协议, 协议, 通讯协议, EJB]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
 > * [RMI](http://xiaoqing.me/2012/12/19/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
-> * [CORBA](): 
+> * [CORBA](http://xiaoqing.me/2012/12/28/protocols-corba/): 
 > * [SOAP](): (Web Service)
 > * EJB 
 

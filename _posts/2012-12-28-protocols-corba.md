@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Java常见分布式协议比较-CORBA"
-keywords: Java, J2EE, 分布式协议, 协议, 通信协议, CORBA, IIOP, IDL
+keywords: Java, J2EE, 分布式协议, 协议, 通信协议, CORBA, GIOP, IIOP, IDL
 description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了CORBA, IIOP。"
 category: Java
-tags: [Java, 协议, 通信协议, 分布式协议, RMI, XML-RPC, Binary-RPC, Hessian, Burlap, JBoss-Remoting, Http Invoker, Deiban, SOAP, EJB, JMS]
+tags: [Java, 协议, 通信协议, 分布式协议, CORBA, IIOP, GIOP, IDL]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
