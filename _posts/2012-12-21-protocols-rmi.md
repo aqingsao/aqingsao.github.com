@@ -4,7 +4,7 @@ title: "Java常见分布式协议比较-RMI"
 keywords: Java, J2EE, RMI, 分布式协议, 协议, 通信协议, JBoss Remoting, Spring Remoting, HttpInvoker
 description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了RMI, JBoss-Remoting, Spring-Remoting"
 category: Java
-tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, JBoss Remoting, HttpInvoker]
+tags: [Java, 分布式协议, 协议, 通讯协议, RMI, RPC, Spring Remoting, JBoss Remoting, HttpInvoker]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：
