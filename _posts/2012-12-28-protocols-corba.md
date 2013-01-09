@@ -11,8 +11,9 @@ tags: [Java, 协议, 通信协议, 分布式协议, CORBA, IIOP, GIOP, IDL]
 > * [RMI](http://xiaoqing.me/2012/12/21/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
 > * CORBA: 
-> * [SOAP]("/"): (Web Service)
+> * [SOAP](http://xiaoqing.me): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
+> * [JMS](http://xiaoqing.me/2013/01/08/protocols-jms/)
 
 CORBA是OMG定义的分布式对象系统的标准，可以抽象系统平台、网络通讯以及编程语言的差异，提供了分布式对象跨平台调用的能力。换句话说，CORBA对象可以用任何语言编写，运行在任何平台上，并位于网络的任何位置。
 

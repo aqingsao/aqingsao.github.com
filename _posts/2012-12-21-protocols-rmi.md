@@ -11,8 +11,9 @@ tags: [Java, 分布式协议, 协议，通讯协议, RMI, RPC, Spring Remoting, 
 > * RMI: 含JBoss-Remoting，Spring Remoting
 > * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
 > * [CORBA](http://xiaoqing.me/2012/12/28/protocols-corba/): 
-> * [SOAP](): (Web Service)
+> * [SOAP](http://xiaoqing.me): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
+> * [JMS](http://xiaoqing.me/2013/01/08/protocols-jms/)
 
 Java中很容易调用一个实例的方法，但是想调用其他虚拟机上的实例怎么办？RMI技术应运而生，可以让Java程序调用远程虚拟机上的对象。
 

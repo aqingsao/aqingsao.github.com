@@ -11,9 +11,9 @@ tags: [Java, 分布式协议, 协议, 通讯协议, EJB]
 > * [RMI](http://xiaoqing.me/2012/12/19/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * [RPC](http://xiaoqing.me/2012/12/25/protocols-rpc/): 含XML-RPC, Binary-RPC
 > * [CORBA](http://xiaoqing.me/2012/12/28/protocols-corba/): 
-> * [SOAP](): (Web Service)
+> * [SOAP](http://xiaoqing.me): (Web Service)
 > * EJB 
-
+> * [JMS](http://xiaoqing.me/2013/01/08/protocols-jms/)
 
 EJB全称为Enterprise Java Beans，是Sun公司的服务器端组件模型，其设计目标是开发和部署可扩展的分布式Java企业级应用，并提供了持久化、事务处理、安全策略等解决方案。EJB本身是一个规范，需要部署在EJB容器上运行， 如WebLogic, JBoss等.
 

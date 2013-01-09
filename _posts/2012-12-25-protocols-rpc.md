@@ -11,8 +11,9 @@ tags: [Java, 分布式协议, 协议，通讯协议, RPC, XML-RPC, Binary-RPC, H
 > * [RMI](http://xiaoqing.me/2012/12/21/protocols-rmi/): 含JBoss-Remoting，Spring Remoting
 > * RPC: 含XML-RPC, Binary-RPC
 > * [CORBA](http://xiaoqing.me/2012/12/28/protocols-corba/): 
-> * [SOAP](): (Web Service)
+> * [SOAP](http://xiaoqing.me): (Web Service)
 > * [EJB](http://xiaoqing.me/2012/12/19/protocols-ejb/) 
+> * [JMS](http://xiaoqing.me/2013/01/08/protocols-jms/)
 
 RPC, 远程过程调用， 也叫远程函数调用, 最早出现在Sun公司和HP公司的运行Unix操作系统的计算机中，用于系统间通信的一种机制. 
 
