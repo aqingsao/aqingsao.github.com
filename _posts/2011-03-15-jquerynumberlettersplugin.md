@@ -17,7 +17,7 @@ tags: [Html, jQuery, jquerynumberlettersplugin]
 
 其用法如下：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $("input").letters();
 $("input").ip();
 {%endhighlight%}

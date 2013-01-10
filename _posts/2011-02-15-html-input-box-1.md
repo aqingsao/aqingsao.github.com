@@ -15,7 +15,7 @@ Web开发中，可能会遇到这样的需求，HTML的INPUT输入框中限制�
 这篇文章中，我们假设需求是这样的：输入框中的名字只能是数字或者字母，任何其他字符都是非法的。
 页面中的HTML代码片段如下，JavaScript部分使用JQuery来实现：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 <form action="myAction">
     <label>Name:</label>
     <input type="text" name="name" maxlength="20"/>
@@ -27,7 +27,7 @@ Web开发中，可能会遇到这样的需求，HTML的INPUT输入框中限制�
 
 这通常指表单提交之前验证，或者鼠标离开INPUT输入框时验证，如果非法，显示错误信息，同时表单不能提交。这是最简单的一种方式，使用JavaScript和正则表达式就可以（[点击查看实际效果](/assets/html/NumericInput.html)）：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $(document).ready(function(){
     $("input[name='name']").bind("click", function(){
         var reg = /^[0-9a-zA-Z]*$/;
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 还有另外一个简单的方法，就是用输入单个字符后立即检查输入框的所有内容，把非法字符去掉，代码如下（[点击查看实际效果](/assets/html/NumericInput.html)）：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $(document).ready(function(){
     var reg = /[^0-9a-zA-Z]/g;
     $("input[name='name']").bind("keyup", function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 针对缺点2，我们可以稍微改进一下，除了keyup事件，表单提交之前再次检查输入框的内容：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $(document).ready(function(){
     var reg = /[^0-9a-zA-Z]/g;
     $("input[name='name']").bind("keyup", function(){
@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 Jquery有一个[alphanumeric](http://itgroup.com.ph/alphanumeric/)的插件，对特殊字符提供了一定的扩展功能（点击查看实际效果）：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $("#input[name='name']").alphanumeric({nchars:"_"});
 {%endhighlight%}
 

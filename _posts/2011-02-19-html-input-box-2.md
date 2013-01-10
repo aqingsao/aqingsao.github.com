@@ -130,7 +130,7 @@ tags: [Html, JavaScript, jQuery]
 对上表的进一步分析表明，虽然不同浏览器的处理迥异，对经过JQuery的封装，event事件的which属性有一定的规律：对所有的特殊键和控制键，要么不产生keyPress事件，要么其值为0。对所有的可显示字符，which属性就是字符对应的ascii码。所以which属性可以很好的标示按键的种类。
 有了这样的结论，代码也就不难写了：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $("input[name='name']").bind('keypress', function(event) {
     if (!isSpecialKey(event.which) &amp;&amp; !isNumberOrLetter(event.which)) {
          event.preventDefault();
@@ -146,13 +146,13 @@ function isSpecialKey(key) {
 
 要想在输入框中禁用输入法，加上这么一句：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $("input[name='name']").css('ime-mode', 'disabled');
 {%endhighlight%}
 
 只剩下对粘贴的处理了，因为用户有可能粘贴一些非法字符，而多数浏览器并不会为此出发keyPress事件。如果想禁用粘贴键，可以加入者些代码：
 
-{%highlight JavaScript%}
+{%highlight javascript%}
 $("input[name='name']").bind("contextmenu", function(){
     return false;
 });
