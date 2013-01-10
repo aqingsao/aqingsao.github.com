@@ -39,7 +39,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 .post{font-size: 15px; line-height: 1.6;overflow: hidden;}
 .post:last-child {box-shadow: 0 5px 0 -5px rgba(0, 0, 0, 0.075); }
-.post .title{font-size: 30px; margin-bottom: 40px; color: #4183C4; font-weight: bold;}
+.post .title{font-size: 30px; margin: 20px 0; color: #4183C4; font-weight: bold;}
 .post .title a{color: #4183C4;  text-decoration: none; border-bottom: none; margin: 0;}
 .post p, .post blockquote, .post ul, .post ol, .post dl, .mpost table, .post pre{margin: 15px 0;}
 .post h1 + p, .post h2 + p, .post h3 + p, .post h4 + p, .post h5 + p, .post h6 + p{margin-top: 0px}
