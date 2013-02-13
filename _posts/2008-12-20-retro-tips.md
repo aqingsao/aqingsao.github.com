@@ -4,7 +4,7 @@ title: "[翻译]给敏捷回顾主持人的5个小贴士 "
 keywords: Agile, Retrospective
 description: "Some tips to moderate a retrospective meeting"
 category: Agile 
-tags: [Agile, 回顾会议]
+tags: [Agile]
 ---
 没人会喜欢这样的会议，把时间花在无休止的争论中。更不会有人喜欢这样的会议，别人征询了他们的意见，但很快将它置之不理。 回顾会议组织者（以及任何带领小组讨论的人）需要一些办法帮助让团队成员思考、讨论、并有效地作出决定。下面是5个小贴士，可以帮助你把绝大多数时间花在回顾会议上（以及任何其它的会议）。 
 

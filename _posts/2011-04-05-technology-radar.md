@@ -4,7 +4,7 @@ title: 'ThoghtWorks technology radar'
 keywords: ThoughtWorks, Technical Radar
 description: a html version written in HTML5 canvas for ThoughtWorks technical radar
 category: Html
-tags: [Html, Html5, Canvas, JavaScript, RGraph, ThoughtWorks, Technology Radar]
+tags: [Html, Html5, Canvas, JavaScript, ThoughtWorks, Technology Radar]
 
 ---
 

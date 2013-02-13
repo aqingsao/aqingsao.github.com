@@ -4,7 +4,7 @@ title: "浅谈即时验收在敏捷开发中的应用"
 keywords: Agile, signoff
 description: "BA signoff in agile projects"
 category: Agile 
-tags: [Agile, BA Signoff]
+tags: [Agile]
 ---
 >\[注\]：这是2008年底写的一篇关于即时验收（即常说的BA sign off）的文章，原文发表于《程序员》杂志。从去年刚开始加入ThoughtWorks，对敏捷懵懂了解，到现在随着经历的增多，对敏捷的了解也有了越来越多的体会。即时验收是敏捷中很小、很容易被人忽视的实践，甚至很多人都不知道。但我参加了几个项目之后，越来越体会到了即时验收的重要性：每当项目中的bug数量明显增多，我都会提醒自己以及团队：是不是忽略了BA sign off这一环节？
  

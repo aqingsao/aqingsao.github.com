@@ -4,7 +4,7 @@ title: "解决Rails rake fixtures加载的顺序问题"
 keywords: Rails, rake, fixtures
 description: "解决Rails rake fixture的加载顺序问题"
 category: Rails
-tags: [Rails]
+tags: [Rails, Ruby]
 ---
 Rails中有个rake rask，叫做 db:fixtures:load，可以帮你自动load指定目录下（text/fixtures）的yml或csv文件。然而，如果这些文件之间有依赖关系，这个task会失败。
 

@@ -4,7 +4,7 @@ title: '通过JavaScript Template简化前端JavaScript开发'
 keywords: JavaScript, template, trimpath, Web
 description: Use JavaScript template to simplify development of JavaScript.
 category: Web
-tags: [Web, Html, JavaScript, Client Templating, trimpath]
+tags: [Web, Html, JavaScript, Client Templating]
 
 ---
 

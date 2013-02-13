@@ -4,7 +4,7 @@ title: 'jQueryNumberLettersPlugin 0.1.1 Released'
 keywords: jQuery plugin, HTML Input, limit input, number, money, email, keyPress, keyDown, 
 Description: A jQuery plugin for users to input number, email, money only
 category: Html
-tags: [Html, jQuery, jquerynumberlettersplugin]
+tags: [Html, jQuery, JavaScript]
 ---
 
 休了几天假，让我有时间写了一个jQuery的插件：NumberLetters。这个想法来自于前两篇博客：如何做一个完美的HTML INPUT输入框（[上](/2011/02/15/html-input-box-1/)）和（[下](/2011/02/19/html-input-box-2/)），希望做成jQuery的插件后，能够有人使用。

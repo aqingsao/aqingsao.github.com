@@ -4,7 +4,7 @@ title: "在Ubuntu 8.10上安装Rails "
 keywords: Ubuntu 8.10, Rails
 description: "介绍了在Ubuntu 8.10上安装Rails的步骤"
 category: Rails
-tags: [Ubuntu, Rails]
+tags: [Ubuntu, Rails, Ruby]
 ---
 有了aptitude和gem，在ubuntu上安装Rails不是什么难事儿，但实际安装时没准碰到什么问题，比如漏掉了某些类库、必须更新版本等等。如果出现错误了去网上现查也可以，但是耗时耗力，搞不好1、2个小时搭进去了。我在昨天和今天装了3台机器，整理了一下在Ubuntu 8.10上安装Rails 2.2.2的步骤，第一台安装花了2个小时，最后1台只花了10分钟。步骤如下：
 ##0. 准备

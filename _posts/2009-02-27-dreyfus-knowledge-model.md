@@ -4,7 +4,7 @@ title: "读Dreyfus知识获取模型有感"
 keywords: Dreyfus
 description: "Dreyful知识获取模型读后感"
 category: Agile
-tags: [Agile, Capability]
+tags: [Agile]
 ---
 Dreyfus知识获取模型用来描述人对某项技能从无到有，再到精通的这个过程，在 
 Bruce的博客及[InfoQ中文站上](http://www.infoq.com/cn/articles/better-best-practices)上都有介绍。简单读完，有所感受。 

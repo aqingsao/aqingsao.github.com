@@ -4,7 +4,7 @@ title: "Java常见分布式协议比较-JMS"
 keywords: Java, J2EE, 分布式协议, 协议, 通信协议, JMS, 点到点, 发布, 订阅, 消息确认, 持久化, 消息选择器, 选择器
 description: "对Java中常见的分布式协议进行比较，包括语言、传输协议、性能等多方面，本文介绍了JMS。"
 category: Java
-tags: [Java, 协议, 通信协议, 分布式协议, JMS]
+tags: [Java, 协议, JMS]
 ---
 
 > Java的远程调用有多种分布式协议可供使用，但其种类繁多，容易让人困扰。本系列博客分别对它们做入门介绍：

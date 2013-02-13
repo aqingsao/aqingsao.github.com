@@ -4,7 +4,7 @@ title: "客户端模板技术的应用"
 keywords: client templating, JavaScript template, JavaScript, EJS, Web, HTML
 description: Use client side templating technology.
 category: Web
-tags: [Web, Html, Client Templating, JavaScript, EJS]
+tags: [Web, Html, Client Templating, JavaScript]
 
 ---
 

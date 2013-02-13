@@ -4,7 +4,7 @@ title: "通过动态规划求绳子最大长度"
 keywords: Dynamic Programming, 动态规划, Algorithm
 description: "Use dynamic programming to solve a problem: Calculate the max length of a rope，动态规划"
 category: Algorithm
-tags: [Algorithm, 动态规划, Dynamic Programming]
+tags: [Algorithm, 动态规划]
 ---
 
 动态规划，由20世纪50年代初美国数学家R.E.Bellman等人创建，把多阶段过程转化为一系列单阶段问题，利用各阶段之间的关系，逐个求解，创立了解决这类过程优化问题的新方法——动态规划。本文以一个具体的例子，说明如何在实际问题用应用动态规划算法。

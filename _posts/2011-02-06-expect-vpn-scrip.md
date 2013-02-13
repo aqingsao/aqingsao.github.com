@@ -4,7 +4,7 @@ title: 使用Expect创建VPN自动登陆脚本
 keywords: Expect, VPN, Automation, Scripts
 description: Write automation scripts with expect
 category: Tools
-tags: [Tools, Automation, Expect, Script]
+tags: [Tools, Automation]
 ---
 
 平时工作，需要经常在切换到VPN，每次都得面对烦人的登录框，重复输入用户名、密码：
