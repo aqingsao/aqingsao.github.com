@@ -4,7 +4,7 @@ title: "JPA简介"
 description: "介绍JPA的基本概念：EntityManager, EntityManagerFactory, Persistence Unit, Persistence Context"
 keywords: Java, J2EE, JPA, EntityManager, EntityManagerFactory, Persistence Unit, Persistence Context, 实体, 持久化单元
 category: Java
-tags: [Java, JPA]
+tags: [Java, J2EE, JPA]
 ---
 
 JPA全称是Java Persistence API，定义了对象关系映射的标准，对应于[JSR317](http://jcp.org/en/jsr/detail?id=317)。它本身是EJB3.0规范的一部分，但可以独立使用，并且同时支持JEE和JSE环境，使得ORM可以在不同厂商之间移植，是目前公认的ORM的行业标准。本文介绍JPA中常用的几个基本概念。
