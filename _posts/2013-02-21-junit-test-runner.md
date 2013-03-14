@@ -23,18 +23,7 @@ public class WithServerTestRunner extends BlockJUnit4ClassRunner {
 }
 {%endhighlight%}
 
-覆盖runChild方法，在该方法前后加入我们的代码：
-
-{%highlight java linenos%}
-@Override
-protected void runChild(FrameworkMethod method, RunNotifier notifier) {
-    startRestfulServer();
-    super.runChild(method, notifier);
-    stopRestfulServer();
-}
-{%endhighlight%}
-
-在startRestfulServer()方法中启动RESTful服务，可以使用嵌入式Web容器，如Grizzly或Jetty，这里不细述。并在stopRestfulServer()方法中关闭服务。运行发现，每个测试用例前后都会启动停止Web容器！原来runChild()方法是运行每个具体的测试用例，加在这里当然不对。正确的位置是run()方法：
+是覆盖runChild方法吗？不是，其对应一个具体的测试用例。那我们尝试一下覆盖run()方法：
 
 {%highlight java linenos%}
 @Override
@@ -45,21 +34,68 @@ protected void run(RunNotifier notifier) {
 }
 {%endhighlight%}
 
-再次运行，发现结果如我们所期，把上述方法改进一下，确保测试结束后停止Web容器：
+在startRestfulServer()方法中使用嵌入式Web容器，如Grizzly或Jetty启动RESTful服务，并在stopRestfulServer()方法中关闭服务，这里不细述。
+在IDEA中运行多个测试类时，发现每个测试类前后都会执行启动停职服务的方法。原因是在IDEA这样的集成开发环境运行测试时，会启动自己的TestRunner，我们的TestRunner被包装在了IDEA的TestRunner中，因而无法控制所有测试前只运行一次。
+
+事实上JUnit有一个概念叫做RunNotifier，是测试的监听器实现，会在测试开发、测试结束、测试失败等各个时机发送消息给注册的监听器，通过在上面注册自己的监听器，可以在测试启动、结束时得到通知：
 
 {%highlight java linenos%}
+void fireTestRunStarted(Description description);
+
+void fireTestRunFinished(Result result);
+
+void fireTestStarted(Description description) throws StoppedByUserException;
+
+void fireTestFinished(Description description);
+{%endhighlight%}
+
+我们修改自己的Test Runner:
+{%highlight java linenos%}
 @Override
-protected void run(RunNotifier notifier) {
-	try{
-    	startRestfulServer();
-    	super.run(notifier);
-    }finally{
-    	stopRestfulServer();
+public void run(final RunNotifier notifier) {
+    notifier.addListener(new RunListener() {
+        @Override
+        public void testRunStarted(Description description) throws Exception {
+            beforeAllTestsRun();
+        }
+        public void testRunFinished(Result result) throws Exception {
+            afterAllTestsRun();
+        }
+    });
+    try {
+        beforeRun();
+        super.run(notifier);
+    } finally {
+        afterRun();
     }
 }
 {%endhighlight%}
 
-最后一步就是在测试类上添加@RunWith注解，指定我们自己的Test Runner：
+再次选择多个测试类同时运行，发现出了问题：beforeAllTestsRun()方法根本没有调用，因此服务没有启动；而afterAllTestsRun()方法会被调用多次。原因是在我们通过覆盖run()方法添加的监听器，而由于每个测试类都会触发该方法，因而监听器添加了多次；另外我们的监听器添加时机台湾，无法监听到所有测试启动的时间。
+其实，想在RunNotifier初始化时添加监听器比较困难，因为它是在JUnitCore中初始化，而我们也无法拿到后者的实例。接下来我们尝试使用状态标志：
+
+{%highlight java linenos%}
+@Override
+public void run(final RunNotifier notifier) {
+    if (!listenerAdded) {
+        beforeAllTestsRun();
+        notifier.addListener(new RunListener() {
+            public void testRunFinished(Result result) throws Exception {
+                afterAllTestsRun();
+            }
+        });
+        listenerAdded = true;
+    }
+    try {
+        beforeRun();
+        super.run(notifier);
+    } finally {
+        afterRun();
+    }
+}
+{%endhighlight%}
+
+这样，即使run()方法在多个类中会被调到，我们通过一个静态变量listenerAdded来标志是否添加监听器，并在第一次添加监听器时启动beforeAllTestsRun()方法。最后一步就是在测试类上添加@RunWith注解，指定我们自己的Test Runner：
 
 {%highlight java linenos%}
 @RunWith(WithServerTestRunner.class)
@@ -67,4 +103,4 @@ public class EmailResourceTest {
 }
 {%endhighlight%}
 
-好了，至此，我们扩展了Junit的Test Runner，实现了所有测试用例执行之前运行特定的代码，而且只运行一次。事实上，这是很多框架如SpringJUnit4ClassRunner扩展JUnit Test Runner的方式。
+好了，至此，我们扩展了Junit的Test Runner，实现了所有测试用例执行之前运行特定的代码，而且只运行一次。
