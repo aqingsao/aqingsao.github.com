@@ -10,7 +10,7 @@ textarea在Web开发中经常用到，但是它本身不支持maxlength，可以
  
 {% highlight javascript linenos %}
 function limit_textarea_input() {  
-    $("textarea[maxlength]").bind('input propertychange', function() {  
+    $("textarea\[maxlength\]").bind('input propertychange', function() {  
         var maxLength = $(this).attr('maxlength');  
         if ($(this).val().length > maxLength) {  
             $(this).val($(this).val().substring(0, maxLength));  
